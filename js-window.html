@@ -1,0 +1,1896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="theme-color" content="#373434" />
+    <title>Javascript Tutorial</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/styles.css" />
+    <meta name="keywords"
+        content="Prodigy languages, programming, tutorial,coding tutorial, coding, projets, snippets,python,javascript,c++,java ,php,kotlin,c, c-sharp, html,css ," />
+    <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="description"
+        content="This my Javascript Snippets Website , If this gets good response I will add more content &#128521;" />
+    <link rel="canonical" href="/" />
+    <meta property="og:description"
+        content="This my Javascript Snippets Website , If this gets good response I will add more content &#128521;" />
+    <link rel="stylesheet" href="/navbar.css" />
+    <link rel="icon" type="image/x-icon" href="img/icon.ico" />
+    <link rel="apple-touch-icon" href="img/icon.ico" sizes="185x185" />
+    <meta property="og:url" content="/" />
+    <link rel="preconnect" href="/js-window.html">
+    <style>
+        .nav-link {
+            margin-right: 90px;
+            margin-left: 35px;
+            background: rgba(128, 128, 128, 0.014);
+        }
+
+        .container {
+            margin-top: 40px;
+        }
+    </style>
+
+
+</head>
+
+
+<body style="background-color: rgb(234, 238, 247);">
+    <nav  style="background-color: rgba(26, 41, 59, 0.76);" class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/"><img class="brandLogo" src="img/icon.ico" alt="My image" /></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link" href="/">HOME</a>
+                </li>
+
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link" href="/js-window.html">TUTORIALS</a>
+                </li>
+
+                <li class="nav-item font-weight-bold">
+                    <a class="nav-link" href="/project-window.html">PROJECTS</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <style id="aoatfcss" media="all">
+        html {
+            line-height: 1.15;
+            -webkit-text-size-adjust: 100%
+        }
+
+        body {
+            margin: 0
+        }
+
+        main {
+            display: block
+        }
+
+        h1 {
+            font-size: 2em;
+            margin: .67em 0
+        }
+
+        a {
+            background-color: transparent
+        }
+
+        code {
+            font-family: monospace, monospace;
+            font-size: 1em
+        }
+
+        img {
+            border-style: none
+        }
+
+        button,
+        input,
+        textarea {
+            font-family: inherit;
+            font-size: 100%;
+            line-height: 1.15;
+            margin: 0
+        }
+
+        button,
+        input {
+            overflow: visible
+        }
+
+        button {
+            text-transform: none
+        }
+
+        [type=button],
+        [type=submit],
+        button {
+            -webkit-appearance: button
+        }
+
+        [type=button]::-moz-focus-inner,
+        [type=submit]::-moz-focus-inner,
+        button::-moz-focus-inner {
+            border-style: none;
+            padding: 0
+        }
+
+        [type=button]:-moz-focusring,
+        [type=submit]:-moz-focusring,
+        button:-moz-focusring {
+            outline: 1px dotted ButtonText
+        }
+
+        textarea {
+            overflow: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        [type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        .site-header {
+            border-bottom: 1px solid var(--header-border-color)
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: var(--logo-url) no-repeat center center;
+            height: var(--logo-height);
+            width: var(--logo-width)
+        }
+
+        .header-wrapper {
+            position: relative;
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0
+        }
+
+        .site-branding {
+            flex-shrink: 0;
+            flex-grow: 0;
+            padding: 0 .5rem
+        }
+
+        .site-branding a {
+            display: block;
+            padding: .5rem
+        }
+
+        .site-navigation {
+            display: flex;
+            align-items: center;
+            justify-content: center
+        }
+
+        .site-navigation a {
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            font-size: .8rem;
+            font-weight: 500;
+            color: var(--menu-color);
+            padding: .5rem
+        }
+
+        .site-navigation a:visited {
+            color: var(--menu-color)
+        }
+
+        .menu-toggle {
+            display: block;
+            background: var(--hamburger-icon) no-repeat center center;
+            height: 50px;
+            width: 50px;
+            outline: 0;
+            border: none
+        }
+
+        .site-menu {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            left: 0;
+            z-index: -1;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-100%);
+            padding: 0;
+            margin: 0
+        }
+
+        .site-menu li {
+            list-style: none;
+            border-bottom: solid 1px var(--border-color);
+            padding: .5rem 0
+        }
+
+        .site-menu li:first-child {
+            border-top: solid 1px var(--border-color)
+        }
+
+        .site-menu a {
+            display: block
+        }
+
+        svg {
+            fill: currentColor
+        }
+
+        .switch-theme {
+            padding: .25rem 1rem;
+            border-radius: 1rem;
+            width: 20px;
+            height: 20px
+        }
+
+        .switch-theme svg {
+            margin-right: .25rem
+        }
+
+        html .light-mode-icon {
+            display: none
+        }
+
+        html .dark-mode-icon {
+            display: inline
+        }
+
+        @media (min-width:768px) {
+            .menu-toggle {
+                display: none
+            }
+
+            .site-branding a {
+                padding: 0
+            }
+
+            .site-menu {
+                opacity: 1;
+                visibility: visible;
+                position: relative;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                transform: translateY(0);
+                display: flex;
+                justify-content: flex-end;
+                align-items: center
+            }
+
+            .site-navigation a {
+                padding: 1.25rem .75rem
+            }
+
+            .site-menu li {
+                padding: 0
+            }
+
+            .site-menu>.menu-item {
+                border-bottom: solid 1px transparent
+            }
+
+            .site-menu>.current-menu-item,
+            .site-menu>.current-page-ancestor {
+                border-bottom: solid 1px var(--current-color)
+            }
+
+            .site-menu li:first-child,
+            .site-menu li:last-child {
+                border-top: none
+            }
+        }
+
+        .page-header {
+            padding: 0 .5rem;
+            margin-bottom: 1.5rem
+        }
+
+        .entry-content .wp-block-group>div {
+            background-color: var(--body-bg-color);
+            border: solid 1px var(--section-border-color);
+            border-radius: 15px;
+            box-shadow: 0 3px 0 rgba(84, 94, 111, .2);
+            padding: 20px;
+            margin: 0;
+            margin-bottom: 30px
+        }
+
+        .entry-content .wp-block-group>div ul {
+            margin: 0
+        }
+
+        .entry-content .wp-block-group>div h2 {
+            padding-left: 0;
+            margin: 0;
+            margin-bottom: 10px
+        }
+
+        .category-tree {
+            background-color: var(--body-bg-color)
+        }
+
+        .category-tree>.cat-item {
+            position: relative;
+            display: block;
+            margin-bottom: -1px
+        }
+
+        .category-tree .cat-item .badge {
+            display: block;
+            min-width: 1.3rem;
+            height: 1.3rem;
+            font-size: .7rem;
+            font-weight: 700;
+            line-height: 20px;
+            color: var(--button-color);
+            text-align: center;
+            white-space: nowrap;
+            background-color: var(--button-bg-color);
+            border-radius: 50%;
+            float: right
+        }
+
+        .cat-item:last-child {
+            border-width: 1px;
+            padding-bottom: 5px
+        }
+
+        .search-form {
+            margin: 1rem 0
+        }
+
+        ::-webkit-scrollbar {
+            width: .5rem;
+            height: .5rem
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #b8c0c8
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #708090;
+            border-radius: 10px
+        }
+
+        .icon-next-page,
+        .icon-prev-page {
+            color: var(--svg-color);
+            filter: var(--themeable-image-filter)
+        }
+
+        .alignright {
+            float: right;
+            margin: .5em 0 .5em 1em
+        }
+
+        .wp-block-image {
+            margin-bottom: 1em;
+            border-radius: 5px;
+        }
+
+        .wp-block-image img {
+            max-width: 100%
+        }
+
+        .wp-block-image:not(.is-style-rounded) img {
+            border-radius: 5px;
+        }
+
+        .wp-block-image .alignright {
+            display: table
+        }
+
+        .wp-block-image .alignright {
+            float: right;
+            margin: .5em 0 .5em 1em
+        }
+
+        .feature-cat {
+            background-color: var(--body-bg-color, #fff);
+            border: solid 1px var(--section-border-color, #ddd);
+            border-radius: .5rem;
+            box-shadow: 0 3px 0 rgb(84 94 111/20%);
+            padding: .5rem 1rem;
+            margin: 0;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
+        }
+
+        .feature-cat-title {
+            font-size: 1rem;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding: .5rem 0;
+            margin-bottom: 0;
+            text-transform: uppercase
+        }
+
+        .feature-cat-title a {
+            font-weight: 700;
+            color: var(--heading-color, #333)
+        }
+
+        .feature-cat-title>i.line {
+            width: 1.15em;
+            border-bottom: 1px solid #b55;
+            position: absolute;
+            bottom: -1px
+        }
+
+        .feature-cat-title div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .feature-cat-title img {
+            margin-right: .3rem;
+            filter: var(--themeable-image-filter, "none")
+        }
+
+        .feature-cat .count {
+            font-size: .9rem
+        }
+
+        .feature-cat .feature-list li {
+            margin: 0 0 1rem
+        }
+
+        @media (min-width:768px) {
+            .feature-cats {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                column-gap: 3rem
+            }
+        }
+
+        .more-link {
+            height: 1rem;
+            border-bottom: 1px solid #ddd;
+            text-align: center
+        }
+
+        .more-link .btn {
+            font-size: 10px;
+            padding-bottom: 0;
+            border-radius: 2px;
+            border-bottom-width: 2px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: var(--button-bg-color, #e73827);
+            border-color: var(--button-border-color, transparent);
+            padding: 1px 5px;
+            display: inline-block;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: middle;
+            border: 1px solid transparent;
+            box-sizing: border-box
+        }
+
+        html {
+            background: var(--body-bg-color);
+            color: var(--text-color);
+            font-size: 1rem
+        }
+
+        body {
+            font-family: var(--font-family);
+            font-size: 1rem;
+            line-height: 1.8
+        }
+
+        img {
+            height: auto;
+            max-width: 100%
+        }
+
+        img:not([src*=".svg"]) {
+            filter: var(--image-filter)
+        }
+
+        figure {
+            margin: 1em 0
+        }
+
+        h1,
+        h2 {
+            font-weight: 400;
+            color: var(--heading-color);
+            padding: 0
+        }
+
+        h1 {
+            font-size: 1.875rem;
+            margin-bottom: 1.7rem
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem
+        }
+
+        code {
+            font-family: var(--font-family-code);
+            font-size: .875rem;
+            font-weight: 400;
+            background-color: var(--inline-code-bg-color);
+            color: var(--inline-code-color);
+            padding: .25em .5em .25em;
+            border-radius: 3px
+        }
+
+        .wp-block-code code {
+            white-space: pre !important
+        }
+
+        .screen-reader-text {
+            border: 0;
+            clip: rect(1px, 1px, 1px, 1px);
+            clip-path: inset(50%);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: fixed !important;
+            width: 1px;
+            word-wrap: normal !important;
+            outline-style: dashed;
+            outline-width: .125rem;
+            outline-color: var(--text-color)
+        }
+
+        a {
+            color: var(--link-color);
+            text-decoration: none
+        }
+
+        a:visited {
+            color: var(--link-color)
+        }
+
+        ul {
+            padding: 0
+        }
+
+        .header-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .breadcrumbs {
+            font-size: .9rem;
+            padding: 0 .5rem
+        }
+
+        article {
+            padding: 0 .5rem
+        }
+
+        aside {
+            padding: 1rem .5rem
+        }
+
+        .entry-title {
+            color: var(--title-color);
+            font-weight: 400
+        }
+
+        .entry-title a {
+            font-size: 1.25rem
+        }
+
+        .post-excerpt {
+            background-color: var(--body-bg-color);
+            border: solid 1px var(--section-border-color);
+            border-radius: 1rem;
+            box-shadow: 0 3px 0 rgb(84 94 111/20%);
+            padding: .5rem 1rem;
+            margin: 0;
+            margin-bottom: 1.5rem
+        }
+
+        .widget-title {
+            font-weight: 700;
+            font-size: .8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 0 0 1rem;
+            margin: 0
+        }
+
+        .widget_search {
+            margin-bottom: 1.5rem
+        }
+
+        .widget .menu {
+            margin: 0 0 1.5rem
+        }
+
+        .category-tree li a {
+            display: block
+        }
+
+        .widget .children {
+            margin-left: 1rem
+        }
+
+        .feature-list {
+            list-style: none
+        }
+
+        .feature-list li:before {
+            content: "";
+            border-color: transparent #ccc;
+            border-style: solid;
+            border-width: .3em 0 .3em .35em;
+            display: block;
+            height: 0;
+            width: 0;
+            left: -.75rem;
+            top: 1.25rem;
+            position: relative;
+            background: 0 0;
+            margin: 0
+        }
+
+        .ad {
+            text-align: left;
+            margin: .5rem 0
+        }
+
+        .ad-300 {
+            width: 300px;
+            height: 280px
+        }
+
+        .ad:before {
+            content: "Advertisements";
+            color: var(--ads-label-color);
+            font-size: 10px;
+            display: block;
+            text-transform: uppercase;
+            text-align: center
+        }
+
+        .search-form {
+            overflow: hidden;
+            width: 100%
+        }
+
+        .search-form input[type=search] {
+            border: 1px solid var(--input-border-color);
+            border-radius: 3px;
+            font-size: 1rem;
+            padding: 16px;
+            width: 100%;
+            outline-offset: -2px;
+            outline: 0;
+            background-color: var(--input-bg-color);
+            color: var(--input-color)
+        }
+
+        .search-form input[type=submit] {
+            border: 0;
+            clip: rect(0, 0, 0, 0);
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            position: absolute;
+            width: 1px
+        }
+
+        .entry-content ul {
+            padding-left: 1rem
+        }
+
+        .entry-content li {
+            margin: 0 0 .5rem 1rem
+        }
+
+        .widget ul {
+            margin: 0;
+            padding: 0
+        }
+
+        .widget li {
+            list-style-type: none;
+            text-align: left;
+            word-wrap: break-word;
+            font-size: 1rem;
+            padding: .25rem 0
+        }
+
+        .widget li:first-child {
+            padding-top: 0
+        }
+
+        .widget li a {
+            display: inline-block;
+            padding: 0 0 .25rem
+        }
+
+        .entry-content .wp-block-group ul {
+            padding-left: 0;
+            list-style: none
+        }
+
+        .entry-content .wp-block-group ul>li:before {
+            content: "";
+            border-color: transparent #ccc;
+            border-style: solid;
+            border-width: .3em 0 .3em .35em;
+            display: block;
+            height: 0;
+            width: 0;
+            left: -.75rem;
+            top: 1.25rem;
+            position: relative;
+            background: 0 0;
+            margin: 0
+        }
+
+        .wp-block-image .alignright {
+            float: right;
+            margin: .5em 0 .5em 1em
+        }
+
+        @media (min-width:768px) {
+            body {
+                font-size: 1rem
+            }
+        }
+
+        @media (min-width:1140px) {
+            body {
+                font-size: 1rem
+            }
+
+            .site {
+                margin: 0 auto;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden
+            }
+
+            .site-inner {
+                display: flex;
+                justify-content: space-between
+            }
+
+            .site-main {
+                width: 730px
+            }
+
+            aside {
+                width: 300px;
+                padding: 1rem .5rem
+            }
+
+            .wrap {
+                width: 1050px;
+                margin: 0 auto
+            }
+
+            .site-header {
+                background: var(--header-bg-color);
+                width: 100%
+            }
+
+            .header-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center
+            }
+        }
+
+        .hljs-meta,
+        .hljs-params {
+            color: #f5ab35
+        }
+
+        .hljs-title {
+            color: #00e0e0
+        }
+
+        .hljs-keyword {
+            color: #dcc6e0
+        }
+
+        .hljs {
+            display: block;
+            overflow-x: auto;
+            background: #2b2b2b;
+            color: #f8f8f2;
+            padding: .5em
+        }
+
+        @media screen and (-ms-high-contrast:active) {
+
+            .hljs-meta,
+            .hljs-params {
+                color: wheat
+            }
+
+            .hljs-keyword {
+                font-weight: 700
+            }
+        }
+
+        .wth-title {
+            display: inline-block;
+            margin-right: 1rem
+        }
+
+        .wth-btn {
+            display: inline-block;
+            border: none;
+            outline: 0;
+            padding: 10px 25px;
+            border-radius: 3px;
+            font-size: .9rem
+        }
+
+        .wth-form-wrapper {
+            margin-bottom: 4rem
+        }
+
+        .wth-btn-submit {
+            background: var(--button-bg-color);
+            color: var(--button-color);
+            border: solid 1px var(--button-border-color);
+            margin-top: 10px
+        }
+
+        .wth-btn-cancel {
+            background-color: #fff;
+            border: solid 1px var(--button-bg-color);
+            color: var(--button-bg-color);
+            margin-top: 10px
+        }
+
+        .wth-message {
+            background-color: var(--input-bg-color);
+            border: 1px solid var(--input-border-color);
+            min-height: 150px;
+            width: 96%;
+            padding: 2%;
+            display: block;
+            border-radius: 5px;
+            outline: 0;
+            color: var(--text-color)
+        }
+
+        .wth-form {
+            display: block;
+            text-align: left
+        }
+
+        .wth-form.hidden {
+            display: none
+        }
+    </style>
+    <link rel="stylesheet" media="print"
+        href="https://www.javascripttutorial.net/wp-content/cache/autoptimize/css/autoptimize_c14be99bc7222451ed6f3848827aa16d.css"
+        onload="this.onload=null;this.media='all';" /><noscript id="aonoscrcss">
+        <link media="all"
+            href="https://www.javascripttutorial.net/wp-content/cache/autoptimize/css/autoptimize_c14be99bc7222451ed6f3848827aa16d.css"
+            rel="stylesheet" />
+    </noscript>
+    <style>
+        html {
+            --logo-url: url("https://www.javascripttutorial.net/wp-content/uploads/2021/04/javascripttutorial.svg");
+            --logo-width: 154px;
+            --logo-height: 55px;
+            --icon-copy-url: url("https://www.javascripttutorial.net/wp-content/themes/evolution/img/copy-light.svg");
+            --icon-check-url: url("https://www.javascripttutorial.net/wp-content/themes/evolution/img/check-light.svg");
+            --feature-image-bg-color: #fff
+        }
+
+        html[data-theme="dark"] {
+            --logo-url: url("https://www.javascripttutorial.net/wp-content/uploads/2021/04/javascripttutorial_dark.svg");
+            --logo-width: 154px;
+            --logo-height: 55px
+        }
+    </style>
+    <style media="print">
+        .site-main:before {
+            content: url("https://www.javascripttutorial.net/wp-content/uploads/2021/04/javascripttutorial.svg");
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            max-width: 200px
+        }
+
+        .wp-block-image {
+            border-radius: 5px;
+        }
+    </style>
+    </head>
+
+    <body class="home page-template-default page page-id-14 page-parent">
+        <div class="site-inner wrap">
+            <main id="primary" class="site-main">
+                <article id="post-14" class="post-14 page type-page status-publish hentry">
+                    <header class="entry-header">
+                        <h1 class="entry-title">JavaScript Tutorial</h1>
+                    </header>
+                    <div class="entry-content">
+                        <p>Welcome to the JavaScriptTutorial.net website! This JavaScript Tutorial helps you learn
+                            the JavaScript programming language from scratch quickly and effectively.</p>
+                        <div class="wp-block-image">
+                            <figure class="alignright size-large is-resized"><noscript><img
+                                        src="https://www.javascripttutorial.net/wp-content/uploads/2021/04/JavaScript-Tutorial.svg"
+                                        alt="JavaScript Tutorial" class="wp-image-88301" width="150" height="150"
+                                        title="JavaScript Tutorial" /></noscript><img
+                                    src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20150%20150%22%3E%3C/svg%3E'
+                                    data-src="https://www.javascripttutorial.net/wp-content/uploads/2021/04/JavaScript-Tutorial.svg"
+                                    alt="JavaScript Tutorial" class="lazyload wp-image-88301" width="150" height="150"
+                                    title="JavaScript Tutorial" /></a></figure>
+                        </div>
+                        <p>If you&#8230;</p>
+                        <ul>
+                            <li>Are not sure where to start learning JavaScript.</li>
+                            <li>Are frustrated with copy-n-paste JavaScript code from others without really
+                                understanding it.</li>
+                            <li>Cannot add richer and more compelling features to your websites and web applications
+                                using JavaScript because you don&#8217;t know how to get much out of the language.
+                            </li>
+                        </ul>
+                        <p>JavaScriptTutorial.net is a good place to start.</p>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 1.&nbsp;Getting started</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/what-is-javascript/">What is
+                                            JavaScript?</a> &#8211; introduce you to JavaScript and its history.
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-code-editors/">Install
+                                            a JavaScript source code editor</a> &#8211; learn how to install the
+                                        Visual Studio Code for editing JavaScript code.</li>
+                                    <li><a href="https://www.javascripttutorial.net/web-development-tools/">Meet the
+                                            Console Tab of Web Development Tools</a> &#8211; provide you with a
+                                        basic introduction to the Console window on the web browsers.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-hello-world/">JavaScript
+                                            Hello World</a> &#8211; learn how to execute the first JavaScript code
+                                        that displays the famous <code>"Hello, World!"</code> message.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 2. Fundamentals</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-syntax/">Syntax</a>
+                                        &#8211; learn about JavaScript syntax, including case-sensitivity,
+                                        identifiers, comments, expressions, and statements.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-variables/">Variables</a>
+                                        &#8211; &nbsp;discuss JavaScript variables and show you various ways to
+                                        declare the variables in JavaScript.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-data-types/">Data
+                                            types</a> &#8211; learn about data types in JavaScript, including
+                                        primitive and reference types.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-number/">Number</a>
+                                        &#8211; learn about the <code>Number</code> type.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-boolean/">Boolean</a>
+                                        &#8211; introduce you to the <code>Boolean</code> type.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 3. Operators</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-unary-operators/">Unary
+                                            operators</a> &#8211; learn how to use unary operators that take a
+                                        single operand and perform an operation.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-assignment-operators/">Assignment
+                                            operators</a> &#8211; guide you on how to use assignment operators
+                                        to&nbsp;assign a value of its right operand to its left operand.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-comparison-operators/">Comparison
+                                            operators</a> &#8211; show you how to use comparison operators to
+                                        compare two values.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-logical-operators/">Logical
+                                            operators</a> &#8211; learn how to use the logical operators: not (
+                                        <code>!</code>), and ( <code>&amp;&amp;</code>), and or ( <code>||</code>).
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 4. Program flow</h2>
+                                <ul>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-if-else/">if&#8230;else</a>
+                                        &#8211; learn how to execute a block of code based on a specified condition.
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-ternary-operator/">Ternary
+                                            operators</a> &#8211; show you how to make a shortcut for the
+                                        <code>if</code> statement ( <code>?:</code>)
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-switch-case/">switch</a>
+                                        &#8211; show you how to replace multiple <code>if</code> statements when
+                                        comparing a value with multiple variants by using the <code>switch</code>
+                                        statement.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-while-loop/">while</a>
+                                        &#8211; learn how to perform a pre-test loop that repeatedly executes a
+                                        block of code as long as a specified condition is <code>true</code>.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-do-while/">do&#8230;while</a>
+                                        &#8211; show you how to carry a post-test loop that executes a block of code
+                                        repeatedly until a specified condition is <code>false</code>.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-for-loop/">for
+                                            loop</a> &#8211; learn how to repeatedly execute a block of code based
+                                        on various options.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-break/">break</a>
+                                        &#8211; learn how to prematurely terminate a loop.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-continue/">continue</a>
+                                        &#8211; show you how to skip the current iteration of a loop and jump to the
+                                        next one.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 5. Strings</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-string/">JavaScript
+                                            strings</a> &#8211; learn about the basic strings in JavaScript.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-string-type/">String
+                                            type</a> &#8211; introduce you to the String type.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-string-trim/">trim()</a>,
+                                        <a
+                                            href="https://www.javascripttutorial.net/es-next/javascript-string-trimstart/">trimStart()</a>,
+                                        and <a
+                                            href="https://www.javascripttutorial.net/es-next/javascript-string-trimend/">trimEnd()</a>
+                                        &#8211; remove whitespace characters from a string.
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/es-next/pad-string/">padStart()
+                                            and padEnd()</a> &#8211; pad a string with another string until the
+                                        result string reaches the given length.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-concat/">concat()</a>
+                                        &#8211; concatenate multiple strings into a new string.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-split/">split()</a>
+                                        &#8211; split a string into an array of substrings.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-indexof/">indexOf()</a>
+                                        &#8211; get the index of the first occurrence of a substring in a string.
+                                    </li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-lastindexof/">lastIndexOf()</a>
+                                        &#8211; find the index of the last occurrence of a substring in a string.
+                                    </li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-substring/">substring()</a>
+                                        &#8211; extract a substring from a string.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-slice/">slice()</a>
+                                        &#8211; extract a part of a string.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/es6/javascript-string-includes/">includes()</a>
+                                        &#8211; check if the string contains a substring.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 6. Arrays</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-array/">JavaScript
+                                            Array</a> &#8211; introduce to the <code>Array</code> type in
+                                        JavaScript.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-array-length/">Array
+                                            length</a> &#8211; show you how to use the length property of an array
+                                        effectively.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-stack/">Stack</a>
+                                        &#8211; implement the stack data structure using the Array&#8217;s methods:
+                                        <code>push()</code> and <code>pop()</code>.
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-queue/">Queue</a>
+                                        &#8211; implement the queue data structure using the Array&#8217;s methods:
+                                        <code>push()</code> and <code>shift()</code>
+                                    </li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-array-splice/">splice()</a>
+                                        &#8211; manipulate elements in an array such as deleting, inserting, and
+                                        replacing elements.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-array-slice/">slice()</a>
+                                        &#8211; copy elements of an array.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-array-indexof/">index()</a>
+                                        &#8211; locate an element in an array.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-every/">every()</a>
+                                        &#8211; check if every element in an array passes a test.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-array-some/">some()</a>
+                                        &#8211; check if at least one element in an array passed a test.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-array-sort/">sort()</a>
+                                        &#8211; sort elements in an array.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-array-filter/">filter()</a>
+                                        &#8211; filter elements in an array</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-array-map/">map()</a>
+                                        &#8211; transform array elements.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-array-foreach/">forEach()</a>
+                                        &#8211; loop through array elements.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-array-reduce/">reduce()</a>
+                                        &#8211; reduce elements of an array to a value.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-array-join/">join()</a>
+                                        &#8211; concatenate all elements of an array into a string separated by a
+                                        seperator.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-multidimensional-array/">Multidimensional
+                                            Array</a> &#8211; learn how to work with multidimensional arrays in
+                                        JavaScript.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 7. Functions</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-function/">Functions</a>
+                                        &#8211; introduce you to functions in JavaScript.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-functions-are-first-class-citizens/">Functions
+                                            are the first-class citizens</a> &#8211; learn how to store functions in
+                                        the variables, pass functions into other functions as arguments, and return
+                                        functions as values.</li>
+                                    <li><a title="JavaScript Anonymous Functions"
+                                            href="https://www.javascripttutorial.net/javascript-anonymous-functions/">Anonymous
+                                            Functions</a> &#8211; learn about anonymous functions which are the
+                                        functions without names.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-immediately-invoked-function-expression-iife/">Immediately
+                                            Invoked Function Expression (IIFE)</a> &#8211; learn about immediately
+                                        invoked function expressions (IIFE).</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-callback/">Callback
+                                            functions</a> &#8211; introduce you to the callback functions and learn
+                                        how to use the callbacks to handle asynchronous operations.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 8. Objects &amp; Prototypes</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-objects/">Objects</a>
+                                        &#8211; introduce to JavaScript objects.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-object-properties/">Object
+                                            Properties</a> &#8211; dive into the object&#8217;s properties and their
+                                        attributes.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-constructor-function/">Constructor
+                                            functions</a> &#8211; show you how to use constructor functions to
+                                        define custom types in JavaScript.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-prototype/">JavaScript
+                                            Prototype</a> &#8211; learn how the prototype works in JavaScript.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-constructor-prototype/">constructor/prototype
+                                            pattern</a> &#8211; show you how to combine the constructor function and
+                                        prototype pattern to define custom types.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-prototypal-inheritance/">Prototypal
+                                            inheritance</a> &#8211; understand prototypal inheritance in JavaScript.
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-this/">What is this
+                                            in JavaScript</a> &#8211; understand the <code>this</code> value and how
+                                        it works in JavaScript.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-factory-functions/">Factory
+                                            functions</a> &#8211; learn about the factory functions which are
+                                        functions that return objects.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-for-in/">for&#8230;in
+                                            loop</a> &#8211; learn how to iterate over properties of an object using
+                                        the <code>for...in</code> loop.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-enumerable-properties/">Enumerable
+                                            Properties</a> &#8211; learn more about the enumerable properties.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-own-properties/">Own
+                                            Properties</a> &#8211; understand the own and inherited properties.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/">Primitive
+                                            vs. Reference values</a> &#8211; understand the differences between
+                                        primitive and reference values.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-primitive-wrapper-types/">Primitive
+                                            wrapper types</a> &#8211; learn how primitive wrapper types work in
+                                        JavaScript.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 9. Advanced Functions</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-pass-by-value/">Passing
+                                            by value</a> &#8211; understand how pass-by-value works in JavaScript.
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-return-multiple-values/">Returning
+                                            multiple values</a> &#8211; guide you on how to return multiple values
+                                        from a function.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-function-type/">Function
+                                            type</a> &#8211; introduce you to the <code>Function</code> type and its
+                                        properties and methods.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-call/">The call()
+                                            method</a> &#8211; understand the <code>call()</code> method and learn
+                                        how to use it effectively.</li>
+                                    <li>The <a
+                                            href="https://www.javascripttutorial.net/javascript-apply-method/">apply()</a>
+                                        method &#8211; learn how to use the <code>apply()</code> method effectively.
+                                    </li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-bind/">The bind()
+                                            method</a> &#8211; understand the <code>bind()</code> method and how to
+                                        apply it effectively.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-recursive-function/">Recursive
+                                            function</a> &#8211; learn how to develop recursive functions.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-closure/">Closures</a>
+                                        &#8211; understand the closures in JavaScript.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 10. Error handling</h2>
+                                <ul>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-try-catch/">try&#8230;catch</a>
+                                        &#8211; show you how to handle exceptions using the <code>try...catch</code>
+                                        statement.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 11. Regular Expressions</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-regular-expression/">Regular
+                                            expressions</a> &#8211; learn how to create regular expressions in
+                                        JavaScript and how to use them to search and replace strings using patterns
+                                        and flags.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-character-classes/">Character
+                                            classes</a> &#8211; show you how to form a regular expression with
+                                        character classes that allow you to match any character in the character
+                                        sets.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/regular-expression-anchors/">Anchors</a>
+                                        &#8211; learn how to use anchors in regular expressions to match at the
+                                        beginning or end of a string.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/regular-expression-sets-and-ranges/">Sets
+                                            and Ranges</a> &#8211; guide you on how to use the sets and ranges to
+                                        match a set of characters.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/regular-expression-word-boundaries/">Word
+                                            Boundaries</a> &#8211; show you how to use the word boundaries in the
+                                        regular expressions to carry the match whole word only.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/regular-expression-quantifiers/">Quantifiers</a>
+                                        &#8211; learn how to use quantifiers to match a number of instances of a
+                                        character, group, or character class in a string</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-replace/">replace()</a>
+                                        &#8211; replace a substring in a string with a new one.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-match/">match()</a>
+                                        &#8211; match a string against a regular expression.</li>
+                                    <li><a
+                                            href="https://www.javascripttutorial.net/javascript-string-search/">search()</a>
+                                        &#8211; locate a substring in a string using a regular expression.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 12. Network Requests</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-fetch-api/">Fetch
+                                            API</a> &#8211; learn how to make asynchronous requests to a remote
+                                        resource from the web browsers.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wp-block-group">
+                            <div class="wp-block-group__inner-container">
+                                <h2>Section 13. JavaScript Runtime</h2>
+                                <ul>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-execution-context/">Execution
+                                            Contexts</a> &#8211; understand execution contexts including global and
+                                        function execution contexts.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-call-stack/">Call
+                                            Stack</a> &#8211; understand the call stack.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-event-loop/">Event
+                                            Loop</a> &#8211; show you how JavaScript handles asynchronous operations
+                                        using the event loop.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-hoisting/">Hoisting</a>
+                                        &#8211; learn how hoisting works in JavaScript.</li>
+                                    <li><a href="https://www.javascripttutorial.net/javascript-variable-scope/">Variable
+                                            scopes</a> &#8211; introduce you to the variable scopes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </main>
+            <aside id="secondary" class="widget-area">
+                <section id="textblockswidget-12" class="widget widget_textblockswidget">
+                    <div class="text-block carbon-ads">
+                        <div id="carbon-block"></div>
+                    </div>
+                </section>
+                <section id="textblockswidget-6" class="widget widget_textblockswidget">
+                    <div class="text-block sidebar-top">
+                    </div>
+                </section>
+
+                <section id="nav_menu-7" class="widget widget_nav_menu">
+                    <h2 class="widget-title">Getting Started</h2>
+                    <div class="menu-js-getting-started-container">
+                        <ul id="menu-js-getting-started" class="menu">
+                            <li id="menu-item-1065"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1065"><a
+                                    title="What is JavaScript"
+                                    href="https://www.javascripttutorial.net/what-is-javascript/">What is
+                                    JavaScript</a></li>
+                            <li id="menu-item-84572"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84572"><a
+                                    href="https://www.javascripttutorial.net/javascript-code-editors/">Install a
+                                    JavaScript Code Editor</a></li>
+                            <li id="menu-item-84573"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84573"><a
+                                    title="Meet the Console Tab of Devtools"
+                                    href="https://www.javascripttutorial.net/web-development-tools/">Meet the
+                                    Console Tab of Devtools</a></li>
+                            <li id="menu-item-414"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-414"><a
+                                    title="JavaScript Hello World Example"
+                                    href="https://www.javascripttutorial.net/javascript-hello-world/">JavaScript
+                                    Hello World</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-6" class="widget widget_nav_menu">
+                    <h2 class="widget-title">JavaScript Fundamentals</h2>
+                    <div class="menu-js-javascript-fundamentals-container">
+                        <ul id="menu-js-javascript-fundamentals" class="menu">
+                            <li id="menu-item-409"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-409"><a
+                                    title="JavaScript Syntax"
+                                    href="https://www.javascripttutorial.net/javascript-syntax/">Syntax</a></li>
+                            <li id="menu-item-410"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-410"><a
+                                    title="JavaScript Variables"
+                                    href="https://www.javascripttutorial.net/javascript-variables/">Variables</a>
+                            </li>
+                            <li id="menu-item-411"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-411"><a
+                                    title="JavaScript Data Types"
+                                    href="https://www.javascripttutorial.net/javascript-data-types/">Data Types</a>
+                            </li>
+                            <li id="menu-item-84505"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84505"><a
+                                    title="JavaScript Number"
+                                    href="https://www.javascripttutorial.net/javascript-number/">Number</a></li>
+                            <li id="menu-item-413"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-413"><a
+                                    title="JavaScript Boolean vs. boolean"
+                                    href="https://www.javascripttutorial.net/javascript-boolean/">Boolean</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-14" class="widget widget_nav_menu">
+                    <h2 class="widget-title">JavaScript Operators</h2>
+                    <div class="menu-js-operators-container">
+                        <ul id="menu-js-operators" class="menu">
+                            <li id="menu-item-84460"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84460"><a
+                                    title="JavaScript Unary Operators Explained"
+                                    href="https://www.javascripttutorial.net/javascript-unary-operators/">Unary
+                                    Operators</a></li>
+                            <li id="menu-item-84500"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84500"><a
+                                    title="JavaScript Assignment Operators"
+                                    href="https://www.javascripttutorial.net/javascript-assignment-operators/">Assignment
+                                    Operators</a></li>
+                            <li id="menu-item-84461"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84461"><a
+                                    title="An Introduction to JavaScript Logical Operators By Examples"
+                                    href="https://www.javascripttutorial.net/javascript-logical-operators/">Logical
+                                    Operators</a></li>
+                            <li id="menu-item-84462"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84462"><a
+                                    title="A Comprehensive Look at JavaScript Comparison Operators"
+                                    href="https://www.javascripttutorial.net/javascript-comparison-operators/">Comparison
+                                    Operators</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-3" class="widget widget_nav_menu">
+                    <h2 class="widget-title">Control Flow</h2>
+                    <div class="menu-js-control-flow-container">
+                        <ul id="menu-js-control-flow" class="menu">
+                            <li id="menu-item-389"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-389"><a
+                                    title="JavaScript if"
+                                    href="https://www.javascripttutorial.net/javascript-if-else/">if else</a></li>
+                            <li id="menu-item-390"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390"><a
+                                    title="JavaScript switch case"
+                                    href="https://www.javascripttutorial.net/javascript-switch-case/">switch
+                                    case</a></li>
+                            <li id="menu-item-395"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-395"><a
+                                    title="JavaScript while Loop"
+                                    href="https://www.javascripttutorial.net/javascript-while-loop/">while</a></li>
+                            <li id="menu-item-391"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-391"><a
+                                    title="JavaScript do-while Loop"
+                                    href="https://www.javascripttutorial.net/javascript-do-while/">do-while</a></li>
+                            <li id="menu-item-392"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-392"><a
+                                    title="JavaScript for Loop"
+                                    href="https://www.javascripttutorial.net/javascript-for-loop/">for</a></li>
+                            <li id="menu-item-393"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-393"><a
+                                    title="JavaScript break Statement: Control the Execution of Code in a Loop"
+                                    href="https://www.javascripttutorial.net/javascript-break/">break</a></li>
+                            <li id="menu-item-394"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a
+                                    title="JavaScript continue: Skips the Current Iteration of a Loop"
+                                    href="https://www.javascripttutorial.net/javascript-continue/">continue</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id="nav_menu-34" class="widget widget_nav_menu">
+                    <h2 class="widget-title">JavaScript Strings</h2>
+                    <div class="menu-js-strings-container">
+                        <ul id="menu-js-strings" class="menu">
+                            <li id="menu-item-86837"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86837"><a
+                                    title="JavaScript String"
+                                    href="https://www.javascripttutorial.net/javascript-string/">JavaScript
+                                    Strings</a></li>
+                            <li id="menu-item-86836"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86836"><a
+                                    title="JavaScript String Type"
+                                    href="https://www.javascripttutorial.net/javascript-string-type/">String
+                                    Type</a></li>
+                            <li id="menu-item-86945"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86945"><a
+                                    title="JavaScript String concat()"
+                                    href="https://www.javascripttutorial.net/javascript-string-concat/">Concatenating
+                                    Strings: concat()</a></li>
+                            <li id="menu-item-86948"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86948"><a
+                                    title="JavaScript String split()"
+                                    href="https://www.javascripttutorial.net/javascript-string-split/">Splitting a
+                                    String into Substrings: split()</a></li>
+                            <li id="menu-item-86944"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86944"><a
+                                    title="JavaScript String indexOf()"
+                                    href="https://www.javascripttutorial.net/javascript-string-indexof/">Locating a
+                                    Substring Forward: indexOf()</a></li>
+                            <li id="menu-item-86943"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86943"><a
+                                    title="JavaScript String lastIndexOf()"
+                                    href="https://www.javascripttutorial.net/javascript-string-lastindexof/">Locating
+                                    a Substring Backward: lastIndexOf()</a></li>
+                            <li id="menu-item-86947"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86947"><a
+                                    title="JavaScript substring()"
+                                    href="https://www.javascripttutorial.net/javascript-substring/">Extracting a
+                                    Substring from a String: substring()</a></li>
+                            <li id="menu-item-86946"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86946"><a
+                                    title="JavaScript String trim()"
+                                    href="https://www.javascripttutorial.net/javascript-string-trim/">Removing
+                                    Whitespaces from Both Ends: trim()</a></li>
+                            <li id="menu-item-86942"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86942"><a
+                                    title="JavaScript String slice()"
+                                    href="https://www.javascripttutorial.net/javascript-string-slice/">Extracting a
+                                    part of a String: slice()</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-4" class="widget widget_nav_menu">
+                    <h2 class="widget-title">JavaScript Array</h2>
+                    <div class="menu-js-array-container">
+                        <ul id="menu-js-array" class="menu">
+                            <li id="menu-item-396"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-396"><a
+                                    title="JavaScript Array"
+                                    href="https://www.javascripttutorial.net/javascript-array/">JavaScript
+                                    Arrays</a></li>
+                            <li id="menu-item-87629"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87629"><a
+                                    href="https://www.javascripttutorial.net/javascript-array-length/">JavaScript
+                                    Array Length</a></li>
+                            <li id="menu-item-397"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-397"><a
+                                    title="Javascript Stack using push and pop methods"
+                                    href="https://www.javascripttutorial.net/javascript-stack/">Stack</a></li>
+                            <li id="menu-item-398"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-398"><a
+                                    title="JavaScript Queue"
+                                    href="https://www.javascripttutorial.net/javascript-queue/">Queue</a></li>
+                            <li id="menu-item-399"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-399"><a
+                                    title="JavaScript array splice"
+                                    href="https://www.javascripttutorial.net/javascript-array-splice/">Manipulate
+                                    Elements: splice()</a></li>
+                            <li id="menu-item-400"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-400"><a
+                                    title="JavaScript array sort"
+                                    href="https://www.javascripttutorial.net/javascript-array-sort/">Sort Elements:
+                                    sort()</a></li>
+                            <li id="menu-item-401"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-401"><a
+                                    title="JavaScript array indexOf"
+                                    href="https://www.javascripttutorial.net/javascript-array-indexof/">Locate
+                                    Elements: indexOf()</a></li>
+                            <li id="menu-item-402"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-402"><a
+                                    title="Check Every Element Against a Test: every()"
+                                    href="https://www.javascripttutorial.net/javascript-every/">Check If Every
+                                    Element Passes a Test: every()</a></li>
+                            <li id="menu-item-86049"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86049"><a
+                                    href="https://www.javascripttutorial.net/javascript-array-some/">Check If At
+                                    Least One Element Passes a Test: some()</a></li>
+                            <li id="menu-item-426"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-426"><a
+                                    title="JavaScript array filter method"
+                                    href="https://www.javascripttutorial.net/javascript-array-filter/">Filter Array
+                                    Elements: filter()</a></li>
+                            <li id="menu-item-465"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-465"><a
+                                    title="Reducing an Array Into a Value"
+                                    href="https://www.javascripttutorial.net/javascript-array-reduce/">Reduce an
+                                    Array Into a Value: reduce()</a></li>
+                            <li id="menu-item-84542"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84542"><a
+                                    title="Transforming Array Elements"
+                                    href="https://www.javascripttutorial.net/javascript-array-map/">Transform Array
+                                    Elements: map()</a></li>
+                            <li id="menu-item-464"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-464"><a
+                                    title="Looping Through Array: forEach()"
+                                    href="https://www.javascripttutorial.net/javascript-array-foreach/">Loop Through
+                                    Array: forEach()</a></li>
+                            <li id="menu-item-87628"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-87628"><a
+                                    title="JavaScript Array Join"
+                                    href="https://www.javascripttutorial.net/javascript-array-join/">Concatenating
+                                    Array Elements Into a String: join()</a></li>
+                            <li id="menu-item-403"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-403"><a
+                                    title="JavaScript Multidimensional Array"
+                                    href="https://www.javascripttutorial.net/javascript-multidimensional-array/">Multidimensional
+                                    Array</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-5" class="widget widget_nav_menu">
+                    <h2 class="widget-title">JavaScript Functions</h2>
+                    <div class="menu-js-functions-container">
+                        <ul id="menu-js-functions" class="menu">
+                            <li id="menu-item-404"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a
+                                    title="JavaScript Function"
+                                    href="https://www.javascripttutorial.net/javascript-function/">Functions</a>
+                            </li>
+                            <li id="menu-item-86545"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86545"><a
+                                    title="JavaScript Functions are First-Class Citizens"
+                                    href="https://www.javascripttutorial.net/javascript-functions-are-first-class-citizens/">Functions
+                                    are First-Class Citizens</a></li>
+                            <li id="menu-item-86546"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86546"><a
+                                    title="JavaScript Anonymous Functions"
+                                    href="https://www.javascripttutorial.net/javascript-anonymous-functions/">Anonymous
+                                    Functions</a></li>
+                            <li id="menu-item-84658"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84658"><a
+                                    title="JavaScript Immediately Invoked Function Expression"
+                                    href="https://www.javascripttutorial.net/javascript-immediately-invoked-function-expression-iife/">IIFE</a>
+                            </li>
+                            <li id="menu-item-86547"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86547"><a
+                                    title="JavaScript Callback Functions"
+                                    href="https://www.javascripttutorial.net/javascript-callback/">Callback
+                                    Functions</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-13" class="widget widget_nav_menu">
+                    <h2 class="widget-title">JavaScript Objects</h2>
+                    <div class="menu-js-objects-container">
+                        <ul id="menu-js-objects" class="menu">
+                            <li id="menu-item-862"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-862"><a
+                                    title="Understanding JavaScript Objects"
+                                    href="https://www.javascripttutorial.net/javascript-objects/">JavaScript
+                                    Objects</a></li>
+                            <li id="menu-item-84900"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84900"><a
+                                    title="JavaScript Object Properties"
+                                    href="https://www.javascripttutorial.net/javascript-object-properties/">Object
+                                    Properties</a></li>
+                            <li id="menu-item-88198"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88198"><a
+                                    title="JavaScript Constructor Function"
+                                    href="https://www.javascripttutorial.net/javascript-constructor-function/">Constructor
+                                    Functions</a></li>
+                            <li id="menu-item-863"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-863"><a
+                                    title="JavaScript Prototype"
+                                    href="https://www.javascripttutorial.net/javascript-prototype/">Javascript
+                                    Prototypes</a></li>
+                            <li id="menu-item-88218"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88218"><a
+                                    href="https://www.javascripttutorial.net/javascript-constructor-prototype/">Constructor/Prototype
+                                    Pattern</a></li>
+                            <li id="menu-item-865"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-865"><a
+                                    title="JavaScript Prototypal Inheritance"
+                                    href="https://www.javascripttutorial.net/javascript-prototypal-inheritance/">Prototypal
+                                    Inheritance</a></li>
+                            <li id="menu-item-866"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-866"><a
+                                    title="JavaScript this Keyword"
+                                    href="https://www.javascripttutorial.net/javascript-this/">THIS Keyword</a></li>
+                            <li id="menu-item-88219"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88219"><a
+                                    title="JavaScript Factory Functions"
+                                    href="https://www.javascripttutorial.net/javascript-factory-functions/">Factory
+                                    Functions</a></li>
+                            <li id="menu-item-84829"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84829"><a
+                                    title="JavaScript for…in Loop"
+                                    href="https://www.javascripttutorial.net/javascript-for-in/">for…in Loop</a>
+                            </li>
+                            <li id="menu-item-88199"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88199"><a
+                                    title="A Basic Guide to Enumerable Properties of an Object in JavaScript"
+                                    href="https://www.javascripttutorial.net/javascript-enumerable-properties/">Enumerable
+                                    Properties</a></li>
+                            <li id="menu-item-88200"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88200"><a
+                                    title="Understanding Own Properties of an Object in JavaScript"
+                                    href="https://www.javascripttutorial.net/javascript-own-properties/">Own
+                                    Properties</a></li>
+                            <li id="menu-item-88201"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88201"><a
+                                    title="JavaScript Primitive vs. Reference Values"
+                                    href="https://www.javascripttutorial.net/javascript-primitive-vs-reference-values/">Primitive
+                                    vs. Reference Values</a></li>
+                            <li id="menu-item-88202"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88202"><a
+                                    title="JavaScript Primitive Wrapper Types"
+                                    href="https://www.javascripttutorial.net/javascript-primitive-wrapper-types/">Primitive
+                                    Wrapper Types</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-24" class="widget widget_nav_menu">
+                    <h2 class="widget-title">Advanced Functions</h2>
+                    <div class="menu-js-advanced-functions-container">
+                        <ul id="menu-js-advanced-functions" class="menu">
+                            <li id="menu-item-86537"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86537"><a
+                                    title="Understanding How Passing By Value Works in JavaScript"
+                                    href="https://www.javascripttutorial.net/javascript-pass-by-value/">Passing By
+                                    Value</a></li>
+                            <li id="menu-item-86538"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86538"><a
+                                    title="Returning Multiple Values from a Function"
+                                    href="https://www.javascripttutorial.net/javascript-return-multiple-values/">Returning
+                                    Multiple Values</a></li>
+                            <li id="menu-item-86539"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86539"><a
+                                    title="JavaScript Function Type"
+                                    href="https://www.javascripttutorial.net/javascript-function-type/">Function
+                                    Type</a></li>
+                            <li id="menu-item-86542"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86542"><a
+                                    title="JavaScript call() Method"
+                                    href="https://www.javascripttutorial.net/javascript-call/">The call() Method</a>
+                            </li>
+                            <li id="menu-item-86541"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86541"><a
+                                    title="JavaScript apply() method"
+                                    href="https://www.javascripttutorial.net/javascript-apply-method/">The apply()
+                                    method</a></li>
+                            <li id="menu-item-86540"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86540"><a
+                                    title="JavaScript bind() Method"
+                                    href="https://www.javascripttutorial.net/javascript-bind/">The bind() Method</a>
+                            </li>
+                            <li id="menu-item-86543"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86543"><a
+                                    title="JavaScript Recursive Function"
+                                    href="https://www.javascripttutorial.net/javascript-recursive-function/">Recursive
+                                    Functions</a></li>
+                            <li id="menu-item-86544"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86544"><a
+                                    title="JavaScript Closures"
+                                    href="https://www.javascripttutorial.net/javascript-closure/">Closures</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-35" class="widget widget_nav_menu">
+                    <h2 class="widget-title">Regular Expressions</h2>
+                    <div class="menu-js-regular-expression-container">
+                        <ul id="menu-js-regular-expression" class="menu">
+                            <li id="menu-item-86941"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86941"><a
+                                    title="JavaScript Regular Expression"
+                                    href="https://www.javascripttutorial.net/javascript-regular-expression/">Basic
+                                    Regular Expressions</a></li>
+                            <li id="menu-item-86937"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86937"><a
+                                    title="JavaScript Character Classes"
+                                    href="https://www.javascripttutorial.net/javascript-character-classes/">Character
+                                    Classes</a></li>
+                            <li id="menu-item-86959"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86959"><a
+                                    title="Regular Expression Anchors"
+                                    href="https://www.javascripttutorial.net/regular-expression-anchors/">Anchors</a>
+                            </li>
+                            <li id="menu-item-88348"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88348"><a
+                                    title="Regular Expression: Sets and Ranges"
+                                    href="https://www.javascripttutorial.net/regular-expression-sets-and-ranges/">Sets
+                                    and Ranges</a></li>
+                            <li id="menu-item-88349"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88349"><a
+                                    title="Regular Expression: Word Boundaries"
+                                    href="https://www.javascripttutorial.net/regular-expression-word-boundaries/">Word
+                                    Boundaries</a></li>
+                            <li id="menu-item-88350"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-88350"><a
+                                    title="Regular Expression: Quantifiers"
+                                    href="https://www.javascripttutorial.net/regular-expression-quantifiers/">Quantifiers</a>
+                            </li>
+                            <li id="menu-item-86938"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86938"><a
+                                    title="JavaScript String search()"
+                                    href="https://www.javascripttutorial.net/javascript-string-search/">search()</a>
+                            </li>
+                            <li id="menu-item-86939"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86939"><a
+                                    title="JavaScript String match()"
+                                    href="https://www.javascripttutorial.net/javascript-string-match/">match()</a>
+                            </li>
+                            <li id="menu-item-86940"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86940"><a
+                                    title="JavaScript String replace()"
+                                    href="https://www.javascripttutorial.net/javascript-string-replace/">replace()</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="nav_menu-15" class="widget widget_nav_menu">
+                    <h2 class="widget-title">JavaScript Runtime</h2>
+                    <div class="menu-js-javascript-runtime-container">
+                        <ul id="menu-js-javascript-runtime" class="menu">
+                            <li id="menu-item-84641"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84641"><a
+                                    title="JavaScript Execution Context"
+                                    href="https://www.javascripttutorial.net/javascript-execution-context/">Execution
+                                    Context</a></li>
+                            <li id="menu-item-84640"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84640"><a
+                                    title="JavaScript Call Stack"
+                                    href="https://www.javascripttutorial.net/javascript-call-stack/">Call Stack</a>
+                            </li>
+                            <li id="menu-item-84639"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-84639"><a
+                                    title="JavaScript Event Loop"
+                                    href="https://www.javascripttutorial.net/javascript-event-loop/">Event Loop</a>
+                            </li>
+                            <li id="menu-item-86548"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86548"><a
+                                    title="JavaScript Hoisting"
+                                    href="https://www.javascripttutorial.net/javascript-hoisting/">Hoisting</a></li>
+                            <li id="menu-item-86549"
+                                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-86549"><a
+                                    title="JavaScript Variable Scopes"
+                                    href="https://www.javascripttutorial.net/javascript-variable-scope/">Variable
+                                    Scopes</a></li>
+                        </ul>
+                    </div>
+                </section>
+            </aside>
+        </div>
+        </div>
+        <script
+            type='text/javascript'>function _dmBootstrap(file) {
+                    var _dma = document.createElement('script');
+                    _dma.type = 'text/javascript';
+                    _dma.async = true;
+                    _dma.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + file;
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(_dma);
+                }
+                function _dmFollowup(file) { if (typeof DMAds === 'undefined') _dmBootstrap('cdn2.DeveloperMedia.com/a.min.js'); }
+                (function () { _dmBootstrap('cdn1.DeveloperMedia.com/a.min.js'); setTimeout(_dmFollowup, 2000); })();</script>
+        <noscript>
+            <style>
+                .lazyload {
+                    display: none;
+                }
+            </style>
+        </noscript>
+        <script
+            data-noptimize="1">window.lazySizesConfig = window.lazySizesConfig || {}; window.lazySizesConfig.loadMode = 1;</script>
+        <script async data-noptimize="1"
+            src='https://www.javascripttutorial.net/wp-content/plugins/autoptimize/classes/external/js/lazysizes.min.js?ao_version=2.8.4'></script>
+        <script
+            id='adblock-lib-js-extra'>var adsOptions = [{ "selector": ".whitelist", "code": "<div class=\"donation\">\r\n<div class=\"donation-text\">If this site saves you hours of work, please <span class=\"highlight\">whitelist it in your ad blocker \ud83d\ude2d to support us \ud83d\udc96 <\/span>\r\n<div class=\"donation-text\">in creating more helpful and free content in the future.<\/div>\r\n<\/a>" }];</script>
+        <script
+            id='wth-frontend-js-extra'>var wth_js_lang = { "ajax_url": "https:\/\/www.javascripttutorial.net\/wp-admin\/admin-ajax.php", "nonce": "942a90f0e5", "confirm": "Are you sure to delete item?", "positive_feedback": null, "positive_feedback_option": "feedback_messege", "positive_feedback_required": null, "negative_feedback": "true", "negative_feedback_required": "true", "wth_title_nothank": "What was wrong? Please help us to improve", "wth_title_yesthank": "Well Done! Please leave your positive feedback.", "wth_thank_you": "Thank You for your feedback!", "submit_text": "Submit", "wth_ga_enable": "", "wth_ga_category": "Was This Helpful?", "wth_ga_positive": "Positive Reviews", "wth_ga_negative": "Negative Reviews", "wth_share_ask": "Awesome, share it:", "wth_fb_share": "Share", "wth_twitter_share": "Tweet" };</script>
+        <script defer
+            src="https://www.javascripttutorial.net/wp-content/cache/autoptimize/js/autoptimize_da1d895ee5db33d37c158a4092c60afe.js"></script>
+    </body>
+
+</html>
+<!-- FOOTER -->
+<footer class="container-fluid bg-dark my-0 py-3 text-light">
+    <p class="mb-0 text-center">&copy; 2020-2021 - All Rights Reserved</p>
+    <p class="mb-0 text-center">
+        <a href="/js-window.html" style="text-decoration: none; color: #b5c7da">Back to top
+        </a>
+    </p>
+</footer>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<!-- <script>
+        const spacing = '8px';
+        const mystyle =
+            `padding: ${spacing}; background-color: white; color: blue ; font-style:
+italic; border: 1px solid black dotted; font-size: 2em;`;
+        console.log('%cCode With Harry', mystyle);
+    </script> -->
+</body>
+
+</html>
